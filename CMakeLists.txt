@@ -114,7 +114,7 @@ cpuid_xsave.c
 )
 
 set_source_files_properties(cpuid_xsave.c PROPERTIES COMPILE_FLAGS "-mxsave")
-#set_source_files_properties(x/xmult1ax.c PROPERTIES COMPILE_FLAGS "-march=x86-64-v2 -fmacro-backtrace-limit=0")
+set_source_files_properties(x/xmult1ax.c PROPERTIES COMPILE_FLAGS "-march=x86-64-v2") # -fmacro-backtrace-limit=0
 set_source_files_properties(x/xmult1a_sse41.c PROPERTIES COMPILE_FLAGS "-msse4.1")
 set_source_files_properties(x/xmult2a_sse41.c PROPERTIES COMPILE_FLAGS "-msse4.1")
 set_source_files_properties(x/xmult3a_sse41.c PROPERTIES COMPILE_FLAGS "-msse4.1")
